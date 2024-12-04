@@ -11,7 +11,7 @@
 # 3.1
 ![5](/Screen/item1.jpg)
 # 4
-![6](/Screen/traffic lights.png)
+![6](/Screen/trafficLights.png)
 # 4.1
 ![7](/Screen/TransitionHome.png)
 # 5
