@@ -10,3 +10,12 @@
 ![4](/Screen/defoultbutton.jpg)
 # 3.1
 ![5](/Screen/item1.jpg)
+# 4
+![6](/Screen/traffic lights.png)
+# 4.1
+![7](/Screen/TransitionHome.png)
+# 5
+![8](/Screen/scrollTrafficLights.png)
+# 6
+![9](/Screen/StackView.png)
+
