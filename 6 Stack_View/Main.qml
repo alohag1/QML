@@ -10,10 +10,8 @@ ApplicationWindow {
     StackView {
         id: stackView
         anchors.fill: parent
-        initialItem: pageYellow.createObject()  // Желтая страница будет основной
+        initialItem: pageYellow.createObject() 
     }
-
-    // Определяем компоненты для каждого экрана
 
     Component {
         id: pageGreen
@@ -26,7 +24,7 @@ ApplicationWindow {
             Rectangle {
                 width: parent.width
                 height: 50
-                color: "#888"  // Серый цвет хедера
+                color: "#888"
 
                 // Название страницы
                 Text {
@@ -36,20 +34,18 @@ ApplicationWindow {
                     color: "white"
                 }
 
-                // Кнопка для возврата на предыдущую страницу
                 Button {
                     text: "←"
                     anchors.verticalCenter: parent.verticalCenter
                     anchors.left: parent.left
                     anchors.margins: 10
-                    visible: stackView.depth > 1  // Показываем кнопку только если в стеке есть другие страницы
+                    visible: stackView.depth > 1 
                     onClicked: {
-                        stackView.pop()  // Возвращаемся на предыдущую страницу
+                        stackView.pop()
                     }
                 }
             }
 
-            // Контент страницы
             Text {
                 anchors.centerIn: parent
                 text: "Page Green"
@@ -57,28 +53,26 @@ ApplicationWindow {
                 color: "white"
             }
 
-            // Кнопка для перехода к желтому экрану
             Button {
                 text: "To Yellow"
                 anchors.bottom: parent.bottom
                 anchors.right: parent.right
                 anchors.margins: 20
                 onClicked: {
-                    if (stackView.top !== pageYellow) {  // Проверка, если текущая страница не желтая
-                        stackView.replace(pageYellow.createObject())  // Заменить текущую страницу на желтую
+                    if (stackView.top !== pageYellow) { 
+                        stackView.replace(pageYellow.createObject())
                     }
                 }
             }
 
-            // Кнопка для перехода к красному экрану
             Button {
                 text: "To Red"
                 anchors.bottom: parent.bottom
                 anchors.left: parent.left
                 anchors.margins: 20
                 onClicked: {
-                    if (stackView.top !== pageRed) {  // Проверка, если текущая страница не красная
-                        stackView.replace(pageRed.createObject())  // Заменить текущую страницу на красную
+                    if (stackView.top !== pageRed) { 
+                        stackView.replace(pageRed.createObject())
                     }
                 }
             }
@@ -96,59 +90,52 @@ ApplicationWindow {
             Rectangle {
                 width: parent.width
                 height: 50
-                color: "#888"  // Серый цвет хедера
+                color: "#888"
 
-                // Название страницы
                 Text {
                     anchors.centerIn: parent
                     text: "Page Yellow"
                     font.pixelSize: 24
                     color: "black"
                 }
-
-                // Кнопка для возврата на предыдущую страницу
                 Button {
                     text: "←"
                     anchors.verticalCenter: parent.verticalCenter
                     anchors.left: parent.left
                     anchors.margins: 10
-                    visible: stackView.depth > 1  // Показываем кнопку только если в стеке есть другие страницы
+                    visible: stackView.depth > 1 
                     onClicked: {
-                        stackView.pop()  // Возвращаемся на предыдущую страницу
+                        stackView.pop()
                     }
                 }
             }
 
-            // Контент страницы
             Text {
                 anchors.centerIn: parent
                 text: "Page Yellow"
                 font.pixelSize: 24
                 color: "black"
             }
-
-            // Кнопка для перехода к зеленому экрану
             Button {
                 text: "To Green"
                 anchors.bottom: parent.bottom
                 anchors.right: parent.right
                 anchors.margins: 20
                 onClicked: {
-                    if (stackView.top !== pageGreen) {  // Проверка, если текущая страница не зеленая
-                        stackView.replace(pageGreen.createObject())  // Заменить текущую страницу на зеленую
+                    if (stackView.top !== pageGreen) { 
+                        stackView.replace(pageGreen.createObject())
                     }
                 }
             }
 
-            // Кнопка для перехода к красному экрану
             Button {
                 text: "To Red"
                 anchors.bottom: parent.bottom
                 anchors.left: parent.left
                 anchors.margins: 20
                 onClicked: {
-                    if (stackView.top !== pageRed) {  // Проверка, если текущая страница не красная
-                        stackView.replace(pageRed.createObject())  // Заменить текущую страницу на красную
+                    if (stackView.top !== pageRed) { 
+                        stackView.replace(pageRed.createObject())
                     }
                 }
             }
@@ -162,34 +149,29 @@ ApplicationWindow {
             height: parent.height
             color: "red"
 
-            // Хедер
             Rectangle {
                 width: parent.width
                 height: 50
-                color: "#888"  // Серый цвет хедера
+                color: "#888"
 
-                // Название страницы
                 Text {
                     anchors.centerIn: parent
                     text: "Page Red"
                     font.pixelSize: 24
                     color: "white"
                 }
-
-                // Кнопка для возврата на предыдущую страницу
                 Button {
                     text: "←"
                     anchors.verticalCenter: parent.verticalCenter
                     anchors.left: parent.left
                     anchors.margins: 10
-                    visible: stackView.depth > 1  // Показываем кнопку только если в стеке есть другие страницы
+                    visible: stackView.depth > 1
                     onClicked: {
-                        stackView.pop()  // Возвращаемся на предыдущую страницу
+                        stackView.pop()
                     }
                 }
             }
 
-            // Контент страницы
             Text {
                 anchors.centerIn: parent
                 text: "Page Red"
@@ -197,28 +179,26 @@ ApplicationWindow {
                 color: "white"
             }
 
-            // Кнопка для перехода к зеленому экрану
             Button {
                 text: "To Green"
                 anchors.bottom: parent.bottom
                 anchors.right: parent.right
                 anchors.margins: 20
                 onClicked: {
-                    if (stackView.top !== pageGreen) {  // Проверка, если текущая страница не зеленая
-                        stackView.replace(pageGreen.createObject())  // Заменить текущую страницу на зеленую
+                    if (stackView.top !== pageGreen) {
+                        stackView.replace(pageGreen.createObject())
                     }
                 }
             }
 
-            // Кнопка для перехода к желтому экрану
             Button {
                 text: "To Yellow"
                 anchors.bottom: parent.bottom
                 anchors.left: parent.left
                 anchors.margins: 20
                 onClicked: {
-                    if (stackView.top !== pageYellow) {  // Проверка, если текущая страница не желтая
-                        stackView.replace(pageYellow.createObject())  // Заменить текущую страницу на желтую
+                    if (stackView.top !== pageYellow) { 
+                        stackView.replace(pageYellow.createObject()) 
                     }
                 }
             }

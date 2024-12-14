@@ -57,7 +57,6 @@ ApplicationWindow {
                 Button { text: "8"; font.pixelSize: 25; onClicked: if (password.length < maxLength) password += "8" }
                 Button { text: "9"; font.pixelSize: 25; onClicked: if (password.length < maxLength) password += "9" }
 
-            // Row 4
             Rectangle {
                 width: 100
                 height: 43

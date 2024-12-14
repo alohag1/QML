@@ -13,14 +13,12 @@ ApplicationWindow {
         anchors.centerIn: parent
         spacing: 10
 
-        // Поле для ввода имени пользователя
         TextField {
             id: usernameField
             width: 200
             placeholderText: "Username"
         }
 
-        // Поле для ввода пароля
         TextField {
             id: passwordField
             width: 200
@@ -28,7 +26,6 @@ ApplicationWindow {
             echoMode: TextInput.Password
         }
 
-        // Кнопки Log In и Clear
         Row {
             spacing: 10
             anchors.horizontalCenter: parent
