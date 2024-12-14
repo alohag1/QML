@@ -20,6 +20,15 @@
 ![9](/Screen/StackView.png)
 # 7
 ![10](/Screen/messenger.png)
+# 8.1
+![11](/Screen/filling.png)
+# 8.1.1
+![12](/Screen/full.png)
+# 8.2
+![12](/Screen/password.png)
+# 8.2.1
+![13](/Screen/password_enter.png)
+
 
 
 
